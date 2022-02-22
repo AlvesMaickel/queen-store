@@ -1,7 +1,6 @@
 ## About Queen Store
 
-Queen Store is a basic system model as example to insert, update, show and delete data e how this datas can relate between itselfs.
-The system consists to in a user control access with authentication. Was used Laravel to development o the system.
+Queen Store is a system model  basic to insert, update, show and delete data e how this datas can relate between itselfs. The system also consists in the user control access with authentication. Was used Laravel to development o the system.
 
 ## Composer
 
@@ -13,10 +12,10 @@ composer install
 ### Configuration
 
 It's necessary alter the file .env.example, changing his name only to .env.
-The content of this file need change the database data and email data.
+The content of this file should be changed with the real informations of database data and your serrver email config.
 
 #### Dabatase Config
-Change this sctructure following your database config.
+Change this sctructure on .env file following your database config.
 
 ```
 DB_CONNECTION=mysql
@@ -28,7 +27,7 @@ DB_PASSWORD=PASSWORD
 ```
 
 #### Email Config
-Change this sctructure following your e-mail provider config.
+Change this structure on .env file following your email server config.
 ```
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
@@ -41,7 +40,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 ```
 
 #### Database
-Laravel uses his a way of migrate all database config, to use this config execute:
+Laravel uses a own way of migrate all database config, to use this config execute:
 ```
 php artisan migrate
 ```
